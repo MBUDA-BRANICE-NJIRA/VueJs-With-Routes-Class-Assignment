@@ -5,7 +5,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/services">Services</router-link>
-      <router-link to="/testimonials">Testimonials</router-link>
+      <router-link to="/Testimonial">Testimonials</router-link>
       <router-link to="/offers">Offers</router-link>
       <router-link to="/contact">Contact Us</router-link>
     </div>
