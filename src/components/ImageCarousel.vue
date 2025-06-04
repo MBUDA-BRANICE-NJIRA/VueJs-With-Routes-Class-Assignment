@@ -13,15 +13,21 @@ export default {
     return {
       current: 0,
       images: [
-  require('@/assets/image1.jpg'),
-  require('@/assets/image 2.jpg'),
-  require('@/assets/image3.jpg'),
-  require('@/assets/image 4.jpg'),
-  require('@/assets/image 5.jpg'),
-  require('@/assets//image6.jpg'),
-  require('@/assets/imgage7.jpeg'),
-]
+        require('@/assets/image1.jpg'),
+        require('@/assets/image 2.jpg'),
+        require('@/assets/image3.jpg'),
+        require('@/assets/image 4.jpg'),
+        require('@/assets/image 5.jpg'),
+        require('@/assets/image6.jpg'),
+        require('@/assets/imgage7.jpeg'),
+      ]
     }
+  },
+  mounted() {
+    this.startAutoSlide();
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
   methods: {
     next() {
@@ -29,6 +35,9 @@ export default {
     },
     prev() {
       this.current = (this.current - 1 + this.images.length) % this.images.length;
+    },
+    startAutoSlide() {
+      this.interval = setInterval(this.next, 3000); // Change every 3 seconds
     }
   }
 }
@@ -37,18 +46,22 @@ export default {
 <style scoped>
 .carousel {
   position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 2rem auto;
+  width: 100vw;
+  max-width: 95vw;
+  margin: 0 auto;
   overflow: hidden;
   text-align: center;
 }
+
 .carousel-img {
-  width: 100%;
-  height: 300px;
+  width: 100vw;
+  height: 500px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
 }
+
 .carousel-btn {
   position: absolute;
   top: 50%;
