@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <div class="navbar-logo">Branice Tech</div>
+    <div class="navbar-logo">Branice</div>
     <div class="navbar-links">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
