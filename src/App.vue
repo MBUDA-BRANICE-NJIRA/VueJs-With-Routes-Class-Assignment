@@ -13,6 +13,7 @@
     </nav>
     
     <main class="main-content">
+      <ImageCarousel />
       <router-view />
     </main>
     
@@ -76,8 +77,10 @@
 </template>
 
 <script>
+import ImageCarousel from './components/ImageCarousel.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: { ImageCarousel }
 }
 </script>
 
