@@ -8,10 +8,16 @@
     </section>
 
     <section class="offers-list">
-      <div v-for="(offer, index) in offers" :key="index" class="offer-box">
-        <h2 class="offer-title">{{ index + 1 }}. {{ offer.title }}</h2>
-        <p class="offer-description">{{ offer.description }}</p>
-        <div class="offer-price">{{ offer.price }}</div>
+      <!-- Loop through offers and display each one -->
+      <div v-for="(offer, index) in offers" :key="offer.id" class="offer-box">
+        <!-- Offer image from API -->
+        <img :src="offer.download_url" :alt="offer.author" class="offer-img" />
+        <!-- Offer title (using author as a placeholder) -->
+        <h2 class="offer-title">{{ index + 1 }}. {{ offer.author }}</h2>
+        <!-- Offer description (custom or use author/other fields) -->
+        <p class="offer-description">Beautiful photo by {{ offer.author }}.</p>
+        <!-- Offer price -->
+        <div class="offer-price">${{ offer.price }}</div>
         <button class="offer-button">Purchase</button>
       </div>
     </section>
@@ -21,21 +27,25 @@
 <script>
 export default {
   name: "OffersPage",
+  data() {
+    return {
+      offers: [], // Array to hold offers fetched from API
+    };
+  },
   mounted() {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      // Replace with your actual API endpoint
+    // Fetch images from the Picsum API when the component mounts
+    fetch("https://picsum.photos/v2/list?page=1&limit=12")
       .then((response) => response.json())
       .then((data) => {
-        this.offers = data;
+        // Add a random price to each offer
+        this.offers = data.map(item => ({
+          ...item,
+          price: (Math.random() * 100 + 10).toFixed(2) // Generate price between $10.00 and $110.00
+        }));
       })
       .catch((error) => {
         console.error("Error fetching offers:", error);
       });
-  },
-  data() {
-    return {
-      offers: [],
-    };
   },
 };
 </script>
@@ -76,18 +86,33 @@ export default {
   padding: 1.5rem;
   background-color: #f7fafc;
   color: #2d3748;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Offer image styling */
+.offer-img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 .offer-title {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .offer-description {
   font-size: 1rem;
   color: #4a5568;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .offer-price {
