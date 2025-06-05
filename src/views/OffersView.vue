@@ -19,6 +19,18 @@
 <script>
 export default {
   name: "OffersPage",
+  mounted() {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      // Replace with your actual API endpoint
+      .then(response => response.json())
+      .then(data => {
+        this.offers = data;
+      })
+      .catch(error => {
+        console.error("Error fetching offers:", error);
+      });
+    
+  },
   data() {
     return {
       offers: [
