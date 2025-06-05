@@ -7,10 +7,10 @@
 
     <section class="offers-list">
       <div v-for="(offer, index) in offers" :key="index" class="offer-box">
-        <h2 class="offer-title">{{ offer.title }}</h2>
+        <h2 class="offer-title">{{ index + 1 }}. {{ offer.title }}</h2>
         <p class="offer-description">{{ offer.description }}</p>
         <div class="offer-price">{{ offer.price }}</div>
-        <button class="offer-button">Learn More</button>
+        <button class="offer-button">Purchase</button>
       </div>
     </section>
   </div>
@@ -28,9 +28,59 @@ export default {
           price: "$499"
         },
         {
+          title: "Startup Boost Package",
+          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+          price: "$499"
+        },
+        {
+          title: "Startup Boost Package",
+          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+          price: "$499"
+        },
+        {
+          title: "Startup Boost Package",
+          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+          price: "$499"
+        },
+        {
           title: "Premium Support Plan",
           description: "Get 24/7 expert assistance, priority handling, and monthly performance reviews.",
           price: "$149/mo"
+        },
+        {
+          title: "Social Media Mastery",
+          description: "Comprehensive social media management with content creation and analytics.",
+          price: "$299/month"
+        },
+        {
+          title: "E-commerce Essentials",
+          description: "Everything you need to launch and grow your online store, from setup to marketing.",
+          price: "$799"
+        },
+        {
+          title: "Annual Service Bundle",
+          description: "Full access to all services with a 25% discount for yearly subscribers.",
+          price: "$1199/year"
+        },
+        {
+          title: "Startup Boost Package",
+          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+          price: "$499"
+        },
+        {
+          title: "Premium Support Plan",
+          description: "Get 24/7 expert assistance, priority handling, and monthly performance reviews.",
+          price: "$149/mo"
+        },
+        {
+          title: "Social Media Mastery",
+          description: "Comprehensive social media management with content creation and analytics.",
+          price: "$299/month"
+        },
+        {
+          title: "E-commerce Essentials",
+          description: "Everything you need to launch and grow your online store, from setup to marketing.",
+          price: "$799"
         },
         {
           title: "Annual Service Bundle",
