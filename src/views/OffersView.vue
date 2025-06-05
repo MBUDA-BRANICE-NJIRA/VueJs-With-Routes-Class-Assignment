@@ -22,71 +22,71 @@ export default {
   data() {
     return {
       offers: [
-        {
-          title: "Startup Boost Package",
-          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
-          price: "$499"
-        },
-        {
-          title: "Startup Boost Package",
-          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
-          price: "$499"
-        },
-        {
-          title: "Startup Boost Package",
-          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
-          price: "$499"
-        },
-        {
-          title: "Startup Boost Package",
-          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
-          price: "$499"
-        },
-        {
-          title: "Premium Support Plan",
-          description: "Get 24/7 expert assistance, priority handling, and monthly performance reviews.",
-          price: "$149/mo"
-        },
-        {
-          title: "Social Media Mastery",
-          description: "Comprehensive social media management with content creation and analytics.",
-          price: "$299/month"
-        },
-        {
-          title: "E-commerce Essentials",
-          description: "Everything you need to launch and grow your online store, from setup to marketing.",
-          price: "$799"
-        },
-        {
-          title: "Annual Service Bundle",
-          description: "Full access to all services with a 25% discount for yearly subscribers.",
-          price: "$1199/year"
-        },
-        {
-          title: "Startup Boost Package",
-          description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
-          price: "$499"
-        },
-        {
-          title: "Premium Support Plan",
-          description: "Get 24/7 expert assistance, priority handling, and monthly performance reviews.",
-          price: "$149/mo"
-        },
-        {
-          title: "Social Media Mastery",
-          description: "Comprehensive social media management with content creation and analytics.",
-          price: "$299/month"
-        },
-        {
-          title: "E-commerce Essentials",
-          description: "Everything you need to launch and grow your online store, from setup to marketing.",
-          price: "$799"
-        },
-        {
-          title: "Annual Service Bundle",
-          description: "Full access to all services with a 25% discount for yearly subscribers.",
-          price: "$1199/year"
-        }
+        // {
+        //   title: "Startup Boost Package",
+        //   description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+        //   price: "$499"
+        // },
+        // {
+        //   title: "Startup Boost Package",
+        //   description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+        //   price: "$499"
+        // },
+        // {
+        //   title: "Startup Boost Package",
+        //   description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+        //   price: "$499"
+        // },
+        // {
+        //   title: "Startup Boost Package",
+        //   description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+        //   price: "$499"
+        // },
+        // {
+        //   title: "Premium Support Plan",
+        //   description: "Get 24/7 expert assistance, priority handling, and monthly performance reviews.",
+        //   price: "$149/mo"
+        // },
+        // {
+        //   title: "Social Media Mastery",
+        //   description: "Comprehensive social media management with content creation and analytics.",
+        //   price: "$299/month"
+        // },
+        // {
+        //   title: "E-commerce Essentials",
+        //   description: "Everything you need to launch and grow your online store, from setup to marketing.",
+        //   price: "$799"
+        // },
+        // {
+        //   title: "Annual Service Bundle",
+        //   description: "Full access to all services with a 25% discount for yearly subscribers.",
+        //   price: "$1199/year"
+        // },
+        // {
+        //   title: "Startup Boost Package",
+        //   description: "Perfect for new businesses – branding, website setup, and launch strategy included.",
+        //   price: "$499"
+        // },
+        // {
+        //   title: "Premium Support Plan",
+        //   description: "Get 24/7 expert assistance, priority handling, and monthly performance reviews.",
+        //   price: "$149/mo"
+        // },
+        // {
+        //   title: "Social Media Mastery",
+        //   description: "Comprehensive social media management with content creation and analytics.",
+        //   price: "$299/month"
+        // },
+        // {
+        //   title: "E-commerce Essentials",
+        //   description: "Everything you need to launch and grow your online store, from setup to marketing.",
+        //   price: "$799"
+        // },
+        // {
+        //   title: "Annual Service Bundle",
+        //   description: "Full access to all services with a 25% discount for yearly subscribers.",
+        //   price: "$1199/year"
+        // }
       ]
     };
   }
