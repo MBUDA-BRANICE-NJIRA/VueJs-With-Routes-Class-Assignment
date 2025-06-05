@@ -2,11 +2,22 @@
   <div class="testimonials-page">
     <section class="header">
       <h1 class="main-title">What Our Clients Say</h1>
-      <p class="subtitle">Real feedback from our happy customers and partners.</p>
+      <p class="subtitle">
+        Real feedback from our happy customers and partners.
+      </p>
     </section>
 
     <section class="testimonials-list">
-      <div v-for="(testimonial, index) in testimonials" :key="index" class="testimonial-box">
+      <div
+        v-for="(testimonial, index) in testimonials"
+        :key="index"
+        class="testimonial-box"
+      >
+        <img
+          :src="testimonial.image"
+          alt="Photo of {{ testimonial.name }}"
+          class="testimonial-img"
+        />
         <p class="quote">“{{ testimonial.quote }}”</p>
         <div class="client-info">
           <strong>{{ testimonial.name }}</strong>
@@ -23,29 +34,37 @@ export default {
   data() {
     return {
       testimonials: [
-        {
+        { 
+          image: require("../assets/person1.jpg"),
           name: "Jane Doe",
           position: "CEO, Tech Innovators",
-          quote: "Their team was incredibly responsive and delivered our platform ahead of schedule. Highly recommend!"
+          quote:
+            "Their team was incredibly responsive and delivered our platform ahead of schedule. Highly recommend!",
         },
-         {
+        { 
+          image: require("../assets/person 2.jpeg"),
           name: "Sarah Johnson",
           position: "Founder, EduConnect",
-          quote: "Reliable, professional, and results-driven. We couldn’t be happier with the outcome."
+          quote:
+            "Reliable, professional, and results-driven. We couldn’t be happier with the outcome.",
         },
-        {
+        { 
+           image: require("../assets/person 3.jpeg"),
           name: "Michael Smith",
           position: "Product Manager, AppHub",
-          quote: "The user experience design exceeded our expectations. We saw a 30% boost in engagement!"
+          quote:
+            "The user experience design exceeded our expectations. We saw a 30% boost in engagement!",
         },
-        {
+        { 
+          image: require("../assets/peson 4.avif"),
           name: "Sarah Johnson",
           position: "Founder, EduConnect",
-          quote: "Reliable, professional, and results-driven. We couldn’t be happier with the outcome."
-        }
-      ]
+          quote:
+            "Reliable, professional, and results-driven. We couldn’t be happier with the outcome.",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -54,7 +73,7 @@ export default {
   max-width: 900px;
   margin: auto;
   padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .header {
@@ -103,5 +122,14 @@ export default {
   display: block;
   font-size: 0.85rem;
   color: #718096;
+}
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #42b983;
+  
 }
 </style>
