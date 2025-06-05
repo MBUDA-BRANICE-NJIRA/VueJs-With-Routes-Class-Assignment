@@ -28,6 +28,11 @@ export default {
           position: "CEO, Tech Innovators",
           quote: "Their team was incredibly responsive and delivered our platform ahead of schedule. Highly recommend!"
         },
+         {
+          name: "Sarah Johnson",
+          position: "Founder, EduConnect",
+          quote: "Reliable, professional, and results-driven. We couldn’t be happier with the outcome."
+        },
         {
           name: "Michael Smith",
           position: "Product Manager, AppHub",
