@@ -2,7 +2,9 @@
   <div class="offers-page">
     <section class="header">
       <h1 class="main-title">Our Special Offers</h1>
-      <p class="subtitle">Get the best value from our top services and packages.</p>
+      <p class="subtitle">
+        Get the best value from our top services and packages.
+      </p>
     </section>
 
     <section class="offers-list">
@@ -22,22 +24,19 @@ export default {
   mounted() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       // Replace with your actual API endpoint
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.offers = data;
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error fetching offers:", error);
       });
-    
   },
   data() {
     return {
-      offers: [
-       
-      ]
+      offers: [],
     };
-  }
+  },
 };
 </script>
 
@@ -46,7 +45,7 @@ export default {
   max-width: 960px;
   margin: auto;
   padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .header {
