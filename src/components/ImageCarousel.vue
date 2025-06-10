@@ -12,6 +12,7 @@ export default {
   data() {
     return {
       current: 0,
+      //Attay of images to be displayed in the carousel
       images: [
         require('@/assets/image1.jpg'),
         require('@/assets/image 2.jpg'),
