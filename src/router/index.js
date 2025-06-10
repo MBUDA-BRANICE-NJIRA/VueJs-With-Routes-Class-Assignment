@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 
 const routes = [
 //  Home
+
   {
     path: '/',
     name: 'home',
@@ -40,7 +41,6 @@ const routes = [
         component: () => import('../views/ContactUsVuew.vue')
   },
   
-
 ]
 
 const router = createRouter({
