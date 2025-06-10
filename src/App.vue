@@ -53,9 +53,9 @@
           <div class="footer-column">
             <h3 class="footer-title">Contact</h3>
             <ul class="contact-info">
-              <li><i class="fas fa-map-marker-alt"></i> 123 Business St, City</li>
-              <li><i class="fas fa-phone"></i> (123) 456-7890</li>
-              <li><i class="fas fa-envelope"></i> info@branice.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+              <li><i class="fas fa-phone"></i>+254 792 522 646</li>
+              <li><i class="fas fa-envelope"></i>mbudanjira@gmail.com</li>
             </ul>
           </div>
         </div>
