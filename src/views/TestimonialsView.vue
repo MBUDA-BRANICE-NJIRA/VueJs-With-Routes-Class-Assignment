@@ -34,33 +34,33 @@ export default {
   data() {
     return {
       testimonials: [
-        { 
+        {
           image: require("../assets/person1.jpg"),
           name: "Jane Doe",
           position: "CEO, Tech Innovators",
           quote:
             "Their team was incredibly responsive and delivered our platform ahead of schedule. Highly recommend!",
         },
-        { 
+        {
           image: require("../assets/person 2.jpeg"),
           name: "Sarah Johnson",
           position: "Founder, EduConnect",
           quote:
             "Reliable, professional, and results-driven. We couldn’t be happier with the outcome.",
         },
-        { 
-           image: require("../assets/person 3.jpeg"),
+        {
+          image: require("../assets/person 3.jpeg"),
           name: "Michael Smith",
           position: "Product Manager, AppHub",
           quote:
             "The user experience design exceeded our expectations. We saw a 30% boost in engagement!",
         },
-        { 
+        {
           image: require("../assets/peson 4.avif"),
-          name: "Sarah Johnson",
-          position: "Founder, EduConnect",
+          name: "Johnson Lee",
+          position: "CTO, FinTech Solutions",
           quote:
-            "Reliable, professional, and results-driven. We couldn’t be happier with the outcome.",
+            "Their attention to detail and innovative approach transformed our product. A pleasure to work with!",
         },
       ],
     };
@@ -130,6 +130,5 @@ export default {
   border-radius: 50%;
   margin-bottom: 1rem;
   border: 2px solid #42b983;
-  
 }
 </style>
