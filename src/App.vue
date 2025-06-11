@@ -19,7 +19,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-brand">
-          <div class="footer-logo">Branice</div>
+          <div class="footer-logo">M.Branice.N</div>
           <p class="footer-tagline">Your success is our mission</p>
           <div class="social-links">
             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
