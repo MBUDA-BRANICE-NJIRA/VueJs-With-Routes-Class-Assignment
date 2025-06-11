@@ -44,7 +44,7 @@ export default {
         {
           image: require("../assets/person 2.jpeg"),
           name: "Sarah Johnson",
-          position: "Founder, EduConnect",
+          position: "Founder, BNJConnect",
           quote:
             "Reliable, professional, and results-driven. We couldn’t be happier with the outcome.",
         },
